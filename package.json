@@ -1,6 +1,6 @@
 {
-  "name": "lambdaws",
-  "version": "1.0.15",
+  "name": "lambdapi",
+  "version": "0.0.5",
   "description": "AWS lambda functions made easy",
   "main": "index.js",
   "bin": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mentum/lambdaws.git"
+    "url": "https://github.com/VidRoll/LambdaPi.git"
   },
   "keywords": [
     "lambda",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/mentum/lambdaws/issues"
   },
-  "homepage": "https://github.com/mentum/lambdaws",
+  "homepage": "https://github.com/VidRoll/LambdaPi",
   "dependencies": {
     "MD5": "^1.2.1",
     "aws-sdk": "^2.0.30",
