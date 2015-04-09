@@ -1,4 +1,4 @@
-![logo](./logo50x50.png) Lambdaws
+Lambdapi
 ====================================
 Forked from: [lambdaws](https://github.com/mentum/lambdaws)
 
