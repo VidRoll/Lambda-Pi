@@ -1,4 +1,4 @@
-Lambda-Pi
+LambdaPi
 ====================================
 Forked from: [lambdaws](https://github.com/mentum/lambdaws)
 
@@ -6,7 +6,7 @@ Using Amazon's Lambda Service, Lambdaws cloudifies any JavaScript function — i
 
 ## Features
 
-Lambda-Pi will automatically:
+LambdaPi will automatically:
 - Create a new SQS Queue for your function
 - Instrument your function/module to store the result on that SQS Queue
 - Zip your function/module
@@ -17,14 +17,14 @@ Lambda-Pi will automatically:
 - [Install large required system libraries like phantomjs](https://github.com/mentum/lambdaws/blob/master/README.md#using-large-external-libraries)
 - Detect execution timeouts and throw an appropriate error when it occurs
 
-Lambda-Pi will __not__:
+LambdaPi will __not__:
 - Alter your function or module
 - Re-upload the function on every call
 - Add much overhead
 
 ## Installation
 
-```npm install lambdaws```
+```npm install git@github.com:VidRoll/Lambda-Pi.git```
 
 ## Usage
 
@@ -37,7 +37,7 @@ This is not the recommended way of working with Lambdaws and should only be used
 Please note that `λ` is used here only for shortening the code and for clarity.
 
 ```js
-var λ = require('lambdaws').create;
+var λ = require('lambdapi').create;
 
 // A simple inlined asynchronous function computing A + B
 var calculator = function(a, b, callback) { 
@@ -101,22 +101,22 @@ You can set your AWS credentials in one of three ways.
 2. You can use a [different profile](http://docs.aws.amazon.com/AWSJavaScriptSDK/guide/node-configuring.html#Using_Profiles_with_the_SDK):
 
    ```js
-   var lambdaws = require('lambdaws');
+   var lambdapi = require('lambdapi');
 
-   lambdaws.config({
+   lambdapi.config({
        credentials: 'my-profile',  // string, profile name.
        role: '' // ** Required **
    });
 
-   lambdaws.start();
+   lambdapi.start();
    ```
 
 3. You can set the access and secret keys manually:
 
    ```js
-   var lambdaws = require('lambdaws');
+   var lambdapi = require('lambdapi');
 
-   lambdaws.config({
+   lambdapi.config({
        credentials: {
            accessKey: '',  // string, AWS AccessKeyId.
            secretKey: '',  // string, AWS AccessKeySecret.
@@ -124,7 +124,7 @@ You can set your AWS credentials in one of three ways.
        role: '' // ** Required **
    });
 
-   lambdaws.start();
+   lambdapi.start();
    ```
 
 The `role` is a ARN of the IAM role that AWS Lambda can assume to push to SQS, S3 and any other AWS services you are using inside your Lambda function. You need to give the role those policies.
@@ -135,7 +135,7 @@ See ```example/example.js```
 
 ### Upload functions using the Command Line Interface (CLI)
 
-Documentation needed. See ```bin/lambdaws-cli.js``` for implementation and usage.
+Documentation needed. See ```bin/lambdapi-cli.js``` for implementation and usage.
 
 ## Limitations
 
