@@ -1,14 +1,12 @@
-Lambdapi
+Lambda-Pi
 ====================================
 Forked from: [lambdaws](https://github.com/mentum/lambdaws)
-
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/mentum/lambdaws?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://img.shields.io/travis/mentum/lambdaws.svg?style=flat)](https://travis-ci.org/mentum/lambdaws)
 
 Using Amazon's Lambda Service, Lambdaws cloudifies any JavaScript function — including existing libraries — with no extra code. It removes the friction you get when using AWS Lambda directly. The goal of Lambdaws is to make it trivial to build highly scalable, highly available applications.
 
 ## Features
 
-Lambdaws will automatically:
+Lambda-Pi will automatically:
 - Create a new SQS Queue for your function
 - Instrument your function/module to store the result on that SQS Queue
 - Zip your function/module
@@ -19,7 +17,7 @@ Lambdaws will automatically:
 - [Install large required system libraries like phantomjs](https://github.com/mentum/lambdaws/blob/master/README.md#using-large-external-libraries)
 - Detect execution timeouts and throw an appropriate error when it occurs
 
-Lambdaws will __not__:
+Lambda-Pi will __not__:
 - Alter your function or module
 - Re-upload the function on every call
 - Add much overhead
